@@ -8,6 +8,8 @@
 }
 
 .box {
+  justify-content: center;
+  align-items: center;
   background: palevioletred;
   font-weight: bold;
   text-align: center;
