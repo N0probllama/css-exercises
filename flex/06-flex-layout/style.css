@@ -6,6 +6,20 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
+a {
+    /* this removes the underlined text for our links */
+    text-decoration: none;
+}
+
+.left-links, .right-links {
+  /* This removes the bullets on list items */
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 8px
+
+}
 
 img {
   width: 600px;
