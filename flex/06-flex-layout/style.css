@@ -5,20 +5,54 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
-}
-a {
-    /* this removes the underlined text for our links */
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+ 
+  
 }
 
-.left-links, .right-links {
-  /* This removes the bullets on list items */
-  list-style-type: none;
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+ 
+
+}
+
+
+a {
+  /* text-decoration: none; removes the underlined text for our links. 
+  We use 'a' to target the universal selecter for the links. */
+  text-decoration: none;
+
+  color: #666;
+}
+
+ul {
+  /* List-style: none; removes the bullets on list items.
+  We use 'ul' to target the universal selecter for the list items. */
+  list-style: none;
   display: flex;
   padding: 0px;
   margin: 0px;
-  gap: 8px
+  gap: 16px
 
+}
+
+
+
+
+.left-links, .right-links {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  
 }
 
 img {
@@ -30,7 +64,21 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
+  
+  
 }
+
+.buttons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  
+}
+
 
 input {
   border: 1px solid #ddd;
@@ -38,4 +86,26 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+ 
 }
+.footer {
+  background:#eee;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-self: stretch;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.header, .footer {
+   display: flex;
+   padding: 16px;
+  justify-content: space-between;
+  flex-grow: initial;
+  flex-shrink: 0;
+  column-gap: auto;
+  
+}
+
