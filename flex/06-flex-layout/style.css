@@ -7,32 +7,84 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  flex-shrink: 0;
+
+}
+
+img {
+  width: 600px;
+
+}
+
+
+
+.left-links, .right-links {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  
+}
+
+
+
+
+content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
  
   
 }
 
-.content {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-shrink: 0;
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
  
-
 }
 
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px 16px;
+  
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
 
 a {
   /* text-decoration: none; removes the underlined text for our links. 
   We use 'a' to target the universal selecter for the links. */
   text-decoration: none;
-
   color: #666;
+
 }
+
+.header, 
+.footer {
+   display: flex;
+   padding: 16px;
+  justify-content: space-between;
+  
+}
+
+.footer {
+  background:#eee;
+
+}
+
 
 ul {
   /* List-style: none; removes the bullets on list items.
@@ -44,68 +96,3 @@ ul {
   gap: 16px
 
 }
-
-
-
-
-.left-links, .right-links {
-  display: flex;
-  align-content: space-between;
-  justify-content: space-between;
-  
-}
-
-img {
-  width: 600px;
-}
-
-button {
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
-  padding: 8px 16px;
-  
-  
-}
-
-.buttons {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  
-}
-
-
-input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
-  margin-bottom: 16px;
- 
-}
-.footer {
-  background:#eee;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  align-self: stretch;
-  align-items: flex-end;
-  margin-top: auto;
-}
-
-.header, .footer {
-   display: flex;
-   padding: 16px;
-  justify-content: space-between;
-  flex-grow: initial;
-  flex-shrink: 0;
-  column-gap: auto;
-  
-}
-
