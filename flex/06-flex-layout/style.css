@@ -7,6 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
+ 
 
 }
 
@@ -75,7 +76,6 @@ a {
 .footer {
    display: flex;
    padding: 16px;
-   display: flex;
   justify-content: space-between;
   
 }
