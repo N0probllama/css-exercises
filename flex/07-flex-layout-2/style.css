@@ -8,11 +8,15 @@ body {
   flex-grow: 1;
 }
 a {
+
+/* text-decoration: none; will remove the underlined text of links */
   text-decoration: none;
 
 }
 
 ul {
+
+/* list-style: none; will remove the bullets on list items */
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -34,9 +38,8 @@ ul {
   height: 72px;
   background: #eee;
   color: darkmagenta;
-  display: flex;
-  flex-direction: column;
- 
+  
+  
 
 
 }
@@ -44,10 +47,37 @@ ul {
 .sidebar {
   width: 300px;
   background: royalblue;
+  
+
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  
+}
+.main {
+  display: flex;
+  flex-flow: row;
+  
+}
+
+..content {
+  width: 100px;
+  height: 100px;
+  background: azure;
+  margin: 10px;
+  display: flex;
+
+
+}
+
+.header, 
+.footer {
+   display: flex;
+   justify-content: space-between;
+   align-content: space-between;
+  
+
 }
