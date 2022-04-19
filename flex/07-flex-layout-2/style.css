@@ -4,6 +4,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* setting the main body of the HTML to "display:flex" and "flex-direction: column" in .CSS will allow the webpage to stack the content like header,
+   content and footer vertically. This sets the stage for the HolyGrail web layout, where the page contents can be set to
+    "flex-direction: row" while internally nesting in the contents of the page as a flex item within the body. */
   
 }
 
@@ -34,12 +37,16 @@ ul {
   font-weight: 900;
   font-size: 32px;
   padding: 0 8px;
+  /* The header will automatically stick to the top of the wab page by default. See comment on ".body" about 
+  ensuring the footer is stickied to the base of the browsing window properly. */
   
  
 }
 
 .body {
   display: flex;
+  /* flex: 1; will keep the footer sticking to the bottom of the webpage, as it allows the 
+  main body of the site to flex to maximumize the browser window whenever it's resized, keeping the footer pushed down. */
   flex: 1;
 }
 
@@ -51,6 +58,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* use the above flex items and rules to center the text within the footer. */
 
 }
 
@@ -58,6 +66,8 @@ ul {
   flex-shrink: 0;
   background: royalblue;
   padding: 16px;
+  /* flex-shrink determines how much the flex item will shrink relative to the rest of the flex items in the 
+  flex container when there isn’t enough space on the row.*/
 
 }
 
@@ -68,6 +78,7 @@ ul {
   margin: 16px;
   padding: 16px;
   width: 300px;
+  /* Styling of the floating cards in the ".container" or main viewing port on the webpage. */
   
 }
 
@@ -75,9 +86,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   padding: 32px;
+  /* flex-wrap: wrap; will allow the cards to resize with the browsing window and arrange them neatly much liek a game of solitaire. */
 }
 
 li {
   margin-bottom: 16px;
+  /* margin-bottom will create space between the list links and make them look neater. */
 }
 
